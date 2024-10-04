@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector Example</title>
+    <style>
+      /* 1.Universal sekector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* 2.Type Selector */
+      p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      /* 3.Class selector */
+      .highlight {
+        background-color: #2d8ec9;
+      }
+      /* 4.ID selector */
+      #header {
+        background-color: #b8a64e;
+      }
+      /* 5.Attribute selector */
+      input[type="text"] {
+        border: 2px solid #2a0f43;
+      }
+      /* 6.Descendent Selector */
+      article p {
+        font-style: italic;
+        background-color: #0f0a0a;
+        color: #fff;
+        padding: 10px;
+      }
+      /* 7.Child Seelctor */
+      div > p {
+        background-color: #943b3b;
+      }
+      /* 8.Adjacent Sibling selector */
+      h1 + p {
+        font-weight: bolder;
+        background-color: #890985;
+      }
+      /* 9.General sibling selector */
+      h2 ~ p {
+        background-color: #25af33;
+      }
+      /* 10.Pseudo-class selector */
+      a:hover {
+        background-color: #d71414;
+        text-decoration: none;
+        color: aqua;
+        padding: 10px;
+        margin: 4px;
+      }
+      /* 11.Pseudo-element selector */
+      p::first-letter {
+        font-weight: bold;
+        font-size: 30px;
+      }
+      /* 12.Grouping selector */
+      h1,
+      h2,
+      h3 {
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">This is the header</header>
+    <h1>Main Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p class="highlight">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, magnam!
+    </p>
+
+    <input type="text" placeholder="Enter text here" />
+    <article>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, est
+        itaque!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, est
+        itaque!
+      </p>
+      <div>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+    </article>
+
+    <div>
+      <p>I am child</p>
+      <p>I am child</p>
+      <section>
+        <p>I am a Descendent</p>
+      </section>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <!-- <ul>
+      <li>Lorem ipsum dolor sit.</li>
+      <li>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </li>
+    </ul> -->
+    <h2>Sub Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div>Lorem, ipsum.</div>
+    <a href="#">Hover over me to see the pusedo-class selector in action.</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero
+      expedita dolor?
+    </p>
+    <h3>Heading 3</h3>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, ut!
+    </p>
+  </body>
+</html>

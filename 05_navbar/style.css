@@ -1,0 +1,153 @@
+body {
+  background-color: #1d1616;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+.nav-container {
+  margin-bottom: 40px;
+}
+h2 {
+  margin-bottom: 10px;
+}
+.nav1 {
+  /* border: 2px solid white; */
+  background-color: #fff;
+  padding: 10px;
+}
+.nav1 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.nav1 li {
+  display: inline;
+}
+.nav1 a {
+  text-decoration: none;
+  color: #100909;
+  /* background-color: #c36b2c; */
+  padding: 5px 15px;
+  position: relative;
+}
+.nav1 a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: seagreen;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.nav1 a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav1 .login-btn {
+  background-color: rgb(74, 74, 159);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav1 .login-btn:hover {
+  background-color: #526b97;
+  font-weight: bold;
+  border: 2px solid #138e25;
+}
+.nav2 {
+  border-radius: 10px;
+  background-color: #138e25;
+  width: 200px;
+  padding: 20px;
+}
+.nav2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav2 li {
+  margin-bottom: 12px;
+}
+.nav2 a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+.nav2 a:hover {
+  background-color: #073207;
+  border: 1px solid white;
+  width: 89%;
+  border-radius: 10px;
+}
+.nav2 .login-btn {
+  border-radius: 10px;
+  background: #075314;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.nav2 .login-btn:hover {
+  background-color: #073207;
+  border: 1px solid white;
+}
+
+.nav3 {
+  background-color: #6eb7e8;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+.nav3 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav3 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+.nav3 .dropdown-cntent {
+  display: none;
+}
+.nav3 .dropdown:hover .dropdown-cntent {
+  display: block;
+  position: absolute;
+  background: #4b5860;
+  border-radius: 10px;
+}
+.nav3 .login-btn {
+  border: none;
+  color: #fff;
+  background-color: #6eb7e8;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.nav3 .login-btn:hover {
+  background-color: #490cb3;
+  border-radius: 10px;
+  font-weight: bolder;
+  border: 2px solid white;
+}
+.nav3 a:hover {
+  background-color: #490cb3;
+  border-radius: 10px;
+  font-weight: bolder;
+  border: 2px solid white;
+}
